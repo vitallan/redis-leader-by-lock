@@ -11,6 +11,8 @@ Java 8
 
 Maven
 
+Redis
+
 ## Running
 mvn clean install
 
