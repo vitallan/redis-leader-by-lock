@@ -1,4 +1,4 @@
-package com.allanvital;
+package com.allanvital.leaderbylock;
 
 import java.util.Random;
 

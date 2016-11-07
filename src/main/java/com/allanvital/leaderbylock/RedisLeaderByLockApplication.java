@@ -1,4 +1,4 @@
-package com.allanvital;
+package com.allanvital.leaderbylock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @SpringBootApplication
-public class PocRedisLockApplication {
+public class RedisLeaderByLockApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PocRedisLockApplication.class, args);
+		SpringApplication.run(RedisLeaderByLockApplication.class, args);
 	}
 }
