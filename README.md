@@ -29,3 +29,7 @@ The console log will (hopefully) tell you what's happening
 
 ###Things to look
 Almost everything is happening in LeaderWrapper. Take a look at the source code, it's really simple
+
+#Important
+
+Please, oh please, if I did anything wrong, let me know and I will fix it
