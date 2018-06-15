@@ -5,7 +5,6 @@ import redis.clients.jedis.Jedis;
 
 public class LeadershipLatch {
 
-    private final LeadershipProperties leaderShipProperties;
     private String leaderLock;
     private int lockTimeout;
     private String myApplicationId;
@@ -17,7 +16,6 @@ public class LeadershipLatch {
         this.myApplicationId = leadershipProperties.getApplicationId();
         this.lockTimeout = leadershipProperties.getLockTimeout();
         this.leaderLock = leadershipProperties.getLockKey();
-        this.leaderShipProperties = leadershipProperties;
         this.tryToAcquireLock();
     }
 
@@ -34,7 +32,6 @@ public class LeadershipLatch {
         if(isLeaderNode()) {
             jedis.del(leaderLock);
         }
-        jedis.set(leaderLock, "" + myApplicationId, "NX", "PX", 0);
     }
 
 }
